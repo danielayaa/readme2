@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack {
-            VStack {
+            VStack (alignment: .leading){
                 Text("Bulbasaur")
                     .font(.title2)
                     .fontWeight(.bold)
@@ -31,6 +31,7 @@ struct ContentView: View {
             }
         }
         .background(Color.green)
+        .cornerRadius(12)
     }
 }
 
