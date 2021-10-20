@@ -21,6 +21,7 @@ struct PokedexList: View {
                     }
                 }
             }
+            .navigationTitle("POKEDEX")
         }
     }
 }

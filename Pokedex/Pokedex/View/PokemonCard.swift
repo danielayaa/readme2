@@ -19,18 +19,31 @@ struct PokemonCard: View {
                     .padding(.leading)
                 
                 HStack {
-                    Text("Poison/Grass")
-                        .font(.caption)
-                        .fontWeight(.bold)
-                        .foregroundColor(.white)
-                        .padding(.horizontal, 10)
-                        .padding(.vertical, 8)
-                    
-                        .overlay(RoundedRectangle (cornerRadius: 12)
-                        .fill(Color.white.opacity(0.25))
-                    )
-                    
+                    VStack {
+                        Text("Grass")
+                            .font(.caption)
+                            .fontWeight(.bold)
+                            .foregroundColor(.white)
+                            .padding(.horizontal, 10)
+                            .padding(.vertical, 8)
+                        
+                            .overlay(RoundedRectangle (cornerRadius: 12)
+                            .fill(Color.white.opacity(0.25))
+                        )
+                        
                         .frame(width: 100, height: 25)
+                        
+                        Text("Poison")
+                            .font(.caption)
+                            .fontWeight(.bold)
+                            .foregroundColor(.white)
+                            .padding(.horizontal, 10)
+                            .padding(.vertical, 8)
+                        
+                            .overlay(RoundedRectangle (cornerRadius: 12)
+                            .fill(Color.white.opacity(0.25))
+                        )
+                         }
                                  
                     Image("Bulb")
                         .resizable()
