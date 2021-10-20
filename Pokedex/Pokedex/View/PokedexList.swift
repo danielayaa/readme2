@@ -17,7 +17,7 @@ struct PokedexList: View {
             ScrollView {
                 LazyVGrid(columns: gridItems, spacing: 20) {
                     ForEach(0..<151) { _ in
-                        PokemonCard()
+                    PokemonCard(pokemonData: mockData[0])
                     }
                 }
             }
