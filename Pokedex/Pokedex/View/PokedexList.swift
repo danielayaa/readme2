@@ -13,7 +13,15 @@ struct PokedexList: View {
                 GridItem(.flexible())]
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            ScrollView {
+                LazyVGrid(columns: gridItems, spacing: 20) {
+                    ForEach(0..<151) { _ in
+                        PokemonCard()
+                    }
+                }
+            }
+        }
     }
 }
 
