@@ -37,7 +37,7 @@ struct PokemonCard: View {
                         
                          }
                                  
-                    Image("Bulb")
+                    Image("1")
                         .resizable()
                         .scaledToFit()
                         .frame(width: 68, height: 68)
